@@ -69,6 +69,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "_2jop";
             this.Text = "_2jop";
+            this.Load += new System.EventHandler(this._2jop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_map)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -19,6 +19,8 @@ namespace Bomberman
 
         private void _2jop_Load(object sender, EventArgs e)
        int b;
+
+        ínt c;
         }
     }
 }

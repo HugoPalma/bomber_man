@@ -16,5 +16,10 @@ namespace Bomberman
         {
             InitializeComponent();
         }
+
+        private void b_jogador_dois_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_map = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pb_map = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cb_player_1_model = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cb_player_2_model = new System.Windows.Forms.ComboBox();
+            this.pb_player_1_model = new System.Windows.Forms.PictureBox();
+            this.pb_player_2_model = new System.Windows.Forms.PictureBox();
+            this.b_start = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_map)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_player_1_model)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_player_2_model)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cb_map
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cb_map.FormattingEnabled = true;
+            this.cb_map.Location = new System.Drawing.Point(15, 25);
+            this.cb_map.Name = "cb_map";
+            this.cb_map.Size = new System.Drawing.Size(121, 21);
+            this.cb_map.TabIndex = 0;
             // 
             // label1
             // 
@@ -63,7 +64,7 @@
             // 
             this.pb_map.Location = new System.Drawing.Point(142, 12);
             this.pb_map.Name = "pb_map";
-            this.pb_map.Size = new System.Drawing.Size(100, 100);
+            this.pb_map.Size = new System.Drawing.Size(500, 500);
             this.pb_map.TabIndex = 2;
             this.pb_map.TabStop = false;
             // 
@@ -76,66 +77,80 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Player 1 - Model";
             // 
-            // comboBox2
+            // cb_player_1_model
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(15, 131);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 3;
+            this.cb_player_1_model.FormattingEnabled = true;
+            this.cb_player_1_model.Location = new System.Drawing.Point(15, 131);
+            this.cb_player_1_model.Name = "cb_player_1_model";
+            this.cb_player_1_model.Size = new System.Drawing.Size(121, 21);
+            this.cb_player_1_model.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 155);
+            this.label3.Location = new System.Drawing.Point(12, 211);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Player 2 - Model";
             // 
-            // comboBox3
+            // cb_player_2_model
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(15, 171);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 5;
+            this.cb_player_2_model.FormattingEnabled = true;
+            this.cb_player_2_model.Location = new System.Drawing.Point(15, 227);
+            this.cb_player_2_model.Name = "cb_player_2_model";
+            this.cb_player_2_model.Size = new System.Drawing.Size(121, 21);
+            this.cb_player_2_model.TabIndex = 5;
+            this.cb_player_2_model.SelectedIndexChanged += new System.EventHandler(this.cb_player_2_model_SelectedIndexChanged);
             // 
-            // pictureBox1
+            // pb_player_1_model
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(142, 131);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.pb_player_1_model.Location = new System.Drawing.Point(15, 158);
+            this.pb_player_1_model.Name = "pb_player_1_model";
+            this.pb_player_1_model.Size = new System.Drawing.Size(50, 50);
+            this.pb_player_1_model.TabIndex = 7;
+            this.pb_player_1_model.TabStop = false;
             // 
-            // pictureBox2
+            // pb_player_2_model
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(142, 171);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.pb_player_2_model.Location = new System.Drawing.Point(15, 254);
+            this.pb_player_2_model.Name = "pb_player_2_model";
+            this.pb_player_2_model.Size = new System.Drawing.Size(50, 50);
+            this.pb_player_2_model.TabIndex = 8;
+            this.pb_player_2_model.TabStop = false;
+            // 
+            // b_start
+            // 
+            this.b_start.Location = new System.Drawing.Point(12, 489);
+            this.b_start.Name = "b_start";
+            this.b_start.Size = new System.Drawing.Size(75, 23);
+            this.b_start.TabIndex = 9;
+            this.b_start.Text = "PLAY!";
+            this.b_start.UseVisualStyleBackColor = true;
+            this.b_start.Click += new System.EventHandler(this.b_start_Click);
             // 
             // _2jop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 212);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(660, 524);
+            this.Controls.Add(this.b_start);
+            this.Controls.Add(this.pb_player_2_model);
+            this.Controls.Add(this.pb_player_1_model);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cb_player_2_model);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cb_player_1_model);
             this.Controls.Add(this.pb_map);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_map);
             this.Name = "_2jop";
             this.Text = "2 jogadores - opções";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this._2jop_FormClosed);
+            this.Load += new System.EventHandler(this._2jop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_map)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_player_1_model)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_player_2_model)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,14 +158,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_map;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_map;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cb_player_1_model;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox cb_player_2_model;
+        private System.Windows.Forms.PictureBox pb_player_1_model;
+        private System.Windows.Forms.PictureBox pb_player_2_model;
+        private System.Windows.Forms.Button b_start;
     }
 }

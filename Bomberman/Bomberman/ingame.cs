@@ -16,5 +16,10 @@ namespace Bomberman
         {
             InitializeComponent();
         }
+
+        private void ingame_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

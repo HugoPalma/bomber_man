@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // _1jop
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Name = "_1jop";
             this.Text = "_1jop";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this._1jop_FormClosed);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

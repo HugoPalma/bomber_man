@@ -42,6 +42,7 @@
             this.b_jogador_um.TabIndex = 0;
             this.b_jogador_um.Text = "1 Jogador";
             this.b_jogador_um.UseVisualStyleBackColor = true;
+            this.b_jogador_um.Click += new System.EventHandler(this.b_jogador_um_Click);
             // 
             // b_jogador_dois
             // 
@@ -70,6 +71,7 @@
             this.b_creditos.TabIndex = 3;
             this.b_creditos.Text = "Créditos";
             this.b_creditos.UseVisualStyleBackColor = true;
+            this.b_creditos.Click += new System.EventHandler(this.b_creditos_Click);
             // 
             // Form1
             // 

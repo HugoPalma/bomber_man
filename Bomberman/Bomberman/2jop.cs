@@ -12,7 +12,6 @@ namespace Bomberman
 {
     public partial class _2jop : Form
     {
-        int a;
         public _2jop()
         {
             InitializeComponent();
@@ -46,3 +45,4 @@ namespace Bomberman
         }
     }
 }
+

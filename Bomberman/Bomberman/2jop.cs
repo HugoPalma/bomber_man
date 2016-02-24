@@ -19,6 +19,9 @@ namespace Bomberman
 
         private void _2jop_Load(object sender, EventArgs e)
         {
+            cb_map.Text = "DEFAULT - TEST";
+            cb_player_1_model.Text = "DEFAULT - TEST";
+            cb_player_2_model.Text = "DEFAULT - TEST";
 
             Image map_image = Image.FromFile(@"Bomberman\map\nomapselected.png");
             Image model_image = Image.FromFile(@"Bomberman\model\nomodelselected.png");
@@ -39,10 +42,17 @@ namespace Bomberman
 
         }
 
+        private void b_exit_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
+        }
+
         private void b_start_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
-

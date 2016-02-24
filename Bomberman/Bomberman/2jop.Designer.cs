@@ -38,6 +38,7 @@
             this.pb_player_1_model = new System.Windows.Forms.PictureBox();
             this.pb_player_2_model = new System.Windows.Forms.PictureBox();
             this.b_start = new System.Windows.Forms.Button();
+            this.b_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_map)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player_1_model)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player_2_model)).BeginInit();
@@ -46,6 +47,8 @@
             // cb_map
             // 
             this.cb_map.FormattingEnabled = true;
+            this.cb_map.Items.AddRange(new object[] {
+        "DEFAULT - TEST"});
             this.cb_map.Location = new System.Drawing.Point(15, 25);
             this.cb_map.Name = "cb_map";
             this.cb_map.Size = new System.Drawing.Size(121, 21);
@@ -80,6 +83,8 @@
             // cb_player_1_model
             // 
             this.cb_player_1_model.FormattingEnabled = true;
+            this.cb_player_1_model.Items.AddRange(new object[] {
+        "DEFAULT - TEST"});
             this.cb_player_1_model.Location = new System.Drawing.Point(15, 131);
             this.cb_player_1_model.Name = "cb_player_1_model";
             this.cb_player_1_model.Size = new System.Drawing.Size(121, 21);
@@ -97,6 +102,8 @@
             // cb_player_2_model
             // 
             this.cb_player_2_model.FormattingEnabled = true;
+            this.cb_player_2_model.Items.AddRange(new object[] {
+        "DEFAULT - TEST"});
             this.cb_player_2_model.Location = new System.Drawing.Point(15, 227);
             this.cb_player_2_model.Name = "cb_player_2_model";
             this.cb_player_2_model.Size = new System.Drawing.Size(121, 21);
@@ -129,11 +136,22 @@
             this.b_start.UseVisualStyleBackColor = true;
             this.b_start.Click += new System.EventHandler(this.b_start_Click);
             // 
+            // b_exit
+            // 
+            this.b_exit.Location = new System.Drawing.Point(12, 460);
+            this.b_exit.Name = "b_exit";
+            this.b_exit.Size = new System.Drawing.Size(75, 23);
+            this.b_exit.TabIndex = 10;
+            this.b_exit.Text = "<-- BACK";
+            this.b_exit.UseVisualStyleBackColor = true;
+            this.b_exit.Click += new System.EventHandler(this.b_exit_Click);
+            // 
             // _2jop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 524);
+            this.ClientSize = new System.Drawing.Size(654, 522);
+            this.Controls.Add(this.b_exit);
             this.Controls.Add(this.b_start);
             this.Controls.Add(this.pb_player_2_model);
             this.Controls.Add(this.pb_player_1_model);
@@ -168,5 +186,6 @@
         private System.Windows.Forms.PictureBox pb_player_1_model;
         private System.Windows.Forms.PictureBox pb_player_2_model;
         private System.Windows.Forms.Button b_start;
+        private System.Windows.Forms.Button b_exit;
     }
 }

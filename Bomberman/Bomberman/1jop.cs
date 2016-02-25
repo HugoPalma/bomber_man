@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Bomberman
 {
@@ -35,11 +36,30 @@ namespace Bomberman
             cb_player_model.Text = "DEFAULT - TEST";
             cb_bot_model.Text = "DEFAULT - TEST";
 
-            Image map_image = Image.FromFile(@"Bomberman\map\nomapselected.png");
-            Image model_image = Image.FromFile(@"Bomberman\model\nomodelselected.png");
-            pb_map.Image = map_image;
-            pb_player_model.Image = model_image;
-            pb_bot_model.Image = model_image;
+            try{
+                Image map_image = Properties.Resources.nomapselected;
+                Image model_player_image = Properties.Resources.nomodelselected;
+                Image model_bot_image = Properties.Resources.nomodelselected;
+
+                pb_map.Image = map_image;
+                pb_player_model.Image = model_player_image;
+                pb_bot_model.Image = model_bot_image;
+                }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                }
+
+        }
+
+        private void cb_map_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_map_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

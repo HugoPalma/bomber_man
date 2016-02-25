@@ -36,5 +36,15 @@ namespace Bomberman
         {
             MessageBox.Show("Jogo feito por: Gonçalo Filipe nº5 2ºB e Hugo Palma nº6 2ºB", "BOMBERMAN - Creditos");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

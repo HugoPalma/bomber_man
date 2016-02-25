@@ -114,6 +114,7 @@
             this.pb_map.Size = new System.Drawing.Size(500, 500);
             this.pb_map.TabIndex = 12;
             this.pb_map.TabStop = false;
+            this.pb_map.Click += new System.EventHandler(this.pb_map_Click);
             // 
             // label1
             // 
@@ -133,6 +134,7 @@
             this.cb_map.Name = "cb_map";
             this.cb_map.Size = new System.Drawing.Size(121, 21);
             this.cb_map.TabIndex = 10;
+            this.cb_map.SelectedIndexChanged += new System.EventHandler(this.cb_map_SelectedIndexChanged);
             // 
             // b_back_2
             // 

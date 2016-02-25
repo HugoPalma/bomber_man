@@ -23,13 +23,20 @@ namespace Bomberman
             cb_player_1_model.Text = "DEFAULT - TEST";
             cb_player_2_model.Text = "DEFAULT - TEST";
 
-            Image map_image = Image.FromFile(@"Bomberman\map\nomapselected.png");
-            Image model_image = Image.FromFile(@"Bomberman\model\nomodelselected.png");
-            pb_map.Image = map_image;
-            pb_player_1_model.Image = model_image;
-            pb_player_2_model.Image = model_image;
+            try
+            {
+                Image map_image = Properties.Resources.nomapselected;
+                Image model_player_1_image = Properties.Resources.nomodelselected;
+                Image model_player_2_image = Properties.Resources.nomodelselected;
 
-            //b_start.Enabled = false;
+                pb_map.Image = map_image;
+                pb_player_1_model.Image = model_player_1_image;
+                pb_player_2_model.Image = model_player_2_image;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void _2jop_FormClosed(object sender, FormClosedEventArgs e)

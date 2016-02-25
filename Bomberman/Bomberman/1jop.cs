@@ -31,6 +31,9 @@ namespace Bomberman
 
         private void _1jop_Load(object sender, EventArgs e)
         {
+            
+           
+
             cb_map.Text = "DEFAULT - TEST";
             cb_player_model.Text = "DEFAULT - TEST";
             cb_bot_model.Text = "DEFAULT - TEST";
@@ -40,6 +43,8 @@ namespace Bomberman
             pb_map.Image = map_image;
             pb_player_model.Image = model_image;
             pb_bot_model.Image = model_image;
+
+            
         }
     }
 }

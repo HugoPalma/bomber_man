@@ -19,6 +19,7 @@ namespace Bomberman
 
         private void _2jop_Load(object sender, EventArgs e)
         {
+            
             cb_map.Text = "DEFAULT - TEST";
             cb_player_1_model.Text = "DEFAULT - TEST";
             cb_player_2_model.Text = "DEFAULT - TEST";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_1jop));
             this.b_start_2 = new System.Windows.Forms.Button();
             this.pb_bot_model = new System.Windows.Forms.PictureBox();
             this.pb_player_model = new System.Windows.Forms.PictureBox();
@@ -160,8 +161,11 @@
             this.Controls.Add(this.pb_map);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_map);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "_1jop";
-            this.Text = "_1jop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "1 Jogador - Opções";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this._1jop_FormClosed);
             this.Load += new System.EventHandler(this._1jop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_bot_model)).EndInit();

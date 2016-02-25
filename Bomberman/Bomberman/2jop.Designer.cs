@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_2jop));
             this.cb_map = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pb_map = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,7 @@
             // 
             this.cb_map.FormattingEnabled = true;
             this.cb_map.Items.AddRange(new object[] {
-        "DEFAULT - TEST"});
+            "DEFAULT - TEST"});
             this.cb_map.Location = new System.Drawing.Point(15, 25);
             this.cb_map.Name = "cb_map";
             this.cb_map.Size = new System.Drawing.Size(121, 21);
@@ -84,7 +85,7 @@
             // 
             this.cb_player_1_model.FormattingEnabled = true;
             this.cb_player_1_model.Items.AddRange(new object[] {
-        "DEFAULT - TEST"});
+            "DEFAULT - TEST"});
             this.cb_player_1_model.Location = new System.Drawing.Point(15, 131);
             this.cb_player_1_model.Name = "cb_player_1_model";
             this.cb_player_1_model.Size = new System.Drawing.Size(121, 21);
@@ -103,7 +104,7 @@
             // 
             this.cb_player_2_model.FormattingEnabled = true;
             this.cb_player_2_model.Items.AddRange(new object[] {
-        "DEFAULT - TEST"});
+            "DEFAULT - TEST"});
             this.cb_player_2_model.Location = new System.Drawing.Point(15, 227);
             this.cb_player_2_model.Name = "cb_player_2_model";
             this.cb_player_2_model.Size = new System.Drawing.Size(121, 21);
@@ -162,8 +163,11 @@
             this.Controls.Add(this.pb_map);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_map);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "_2jop";
-            this.Text = "2 jogadores - opções";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "2 Jogadores - Opções";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this._2jop_FormClosed);
             this.Load += new System.EventHandler(this._2jop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_map)).EndInit();

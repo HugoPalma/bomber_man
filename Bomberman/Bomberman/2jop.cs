@@ -22,7 +22,7 @@ namespace Bomberman
             cb_map.Text = "DEFAULT - TEST";
             cb_player_1_model.Text = "DEFAULT - TEST";
             cb_player_2_model.Text = "DEFAULT - TEST";
-            
+            //test
 
             try
             {
